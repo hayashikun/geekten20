@@ -32,6 +32,8 @@ export default {
 @import "/node_modules/bulma/bulma.sass";
 
 #app-header {
+  margin-top: 96px;
+
   .navbar-item {
     color: white;
   }
