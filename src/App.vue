@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <Header />
-    <Introduction />
-    <Motivation />
+    <Header/>
+    <Introduction/>
+    <Motivation/>
+    <Product/>
   </div>
 </template>
 
@@ -10,10 +11,13 @@
 import Header from "@/components/Header";
 import Introduction from "@/components/Introduction";
 import Motivation from "@/components/Motivation";
+import Product from "@/components/Product";
+
 
 export default {
   name: 'App',
   components: {
+    Product,
     Motivation,
     Introduction,
     Header,
