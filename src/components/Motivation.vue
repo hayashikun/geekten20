@@ -1,42 +1,42 @@
 <template>
   <div id="motivation" class="container">
-    <div class="content">
+    <div class="content is-medium">
       <h2 class="title is-3">
         モチベ
       </h2>
       <div class="block motivation-list">
         <div class="box">
-          <img src="@/assets/mail.png" alt="mail" style="height: 200px"/>
+          <img src="@/assets/mail.png" alt="mail" style="height: 210px"/>
           <div>楓さんから技育展の案内</div>
         </div>
         <div class="arrow">
           <font-awesome-icon :icon="['fas', 'arrow-right']"/>
         </div>
         <div class="box">
-          <img src="@/assets/thinking.png" alt="thinking" style="height: 180px"/>
-          <div>久しぶりになんか作って出てみるか！<br/>でも何を作ろう</div>
+          <img src="@/assets/thinking.png" alt="thinking" style="height: 200px"/>
+          <div>久々になんか作って出るか！<br/>でも何を作ろう</div>
         </div>
         <div class="arrow">
           <font-awesome-icon :icon="['fas', 'arrow-right']"/>
         </div>
         <div class="box">
-          <img src="@/assets/to_poin.png" alt="to_poin" style="height: 180px"/>
-          <div>発表といえばプレゼン、<br/>プレゼンといえば<b>ポインター！</b></div>
+          <img src="@/assets/to_poin.png" alt="to_poin" style="height: 200px"/>
+          <div>プレゼンといえばポインターやな<br/>レーザーポインター的なやつ作るか</div>
         </div>
         <div class="arrow">
           <font-awesome-icon :icon="['fas', 'arrow-right']"/>
         </div>
         <div class="box">
-          <img src="@/assets/hand.png" alt="hand" style="height: 180px"/>
-          <div>ポインターをどうやって動かす？<br/>手の動きに連動させれば映えるかな？</div>
+          <img src="@/assets/hand.png" alt="hand" style="height: 200px"/>
+          <div>ポインターをどうやって動かす？<br/>手の動きに連動させれば映えるかな？<br/>オンラインだし表情も伝わるといいな</div>
         </div>
         <div class="arrow">
           <font-awesome-icon :icon="['fas', 'arrow-right']"/>
         </div>
         <div class="box">
-          <img src="@/assets/pipe.png" alt="pipe" style="height: 180px"/>
-          <div><a @click="openModal">mediapipe</a>ってのがあるけど
-            <br/>C++だしライブラリとして使えるわけじゃない</div>
+          <img src="@/assets/pipe.png" alt="pipe" style="height: 200px"/>
+          <div><a @click="openModal">mediapipe</a>で顔とか手の検出ができるぽい
+            <br/>でもライブラリとして使えるわけじゃない<br/>あとC++あんま書きたくない</div>
         </div>
         <div class="arrow">
           <font-awesome-icon :icon="['fas', 'arrow-right']"/>
