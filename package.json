@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "protogen": "python proto_gen.py"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -13,6 +14,8 @@
     "@fortawesome/vue-fontawesome": "^2.0.0",
     "bulma": "^0.9.0",
     "core-js": "^3.6.5",
+    "google-protobuf": "^3.13.0",
+    "grpc-web": "^1.2.1",
     "vue": "^2.6.11",
     "vue-js-modal": "^2.0.0-rc.6"
   },
@@ -21,6 +24,7 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-add-module-exports": "^1.0.4",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^4.14.1",
