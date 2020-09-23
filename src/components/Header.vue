@@ -20,8 +20,13 @@
             <a class="navbar-item" href="https://hayashikun.com/geekten20">
               <h2>hayashikun.com/geekten20</h2>
             </a>
+          </div>
+          <div class="navbar-end">
             <a class="navbar-item" href="https://twitter.com/haya4p">
               <h2>Twitter - @haya4p</h2>
+            </a>
+            <a class="navbar-item" href="https://github.com/hayashikun">
+              <h2>Github - @hayashikun</h2>
             </a>
           </div>
         </div>

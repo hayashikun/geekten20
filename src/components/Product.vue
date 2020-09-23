@@ -11,8 +11,8 @@
           </div>
           <div class="column is-three-quarters">
             <h3>qoin</h3>
-            Webカメラの映像から手や顔を検出し、検出データをgRPCで他のアプリケーションへ送信するアプリケーション<br/>
-            検出にはgoogle/mediapipeを利用し、両手検出などの追加機能を実装した<br/>
+            Webカメラの映像から手や顔を検出し、検出データをgRPCで他へ送信するアプリケーション<br/>
+            検出にはgoogle/mediapipeを利用し、データを抽出する処理などを追加した<br/>
             データ送信は、gRPC Serverを起動し、リクエストに対して検出データをレスポンスとして送る方法 (PullStream) と、
             別のgRPC Serverへリクエストとして検出データを送る方法 (PushStream) の2つに対応している<br/>
             mediapipeはC++で実装され、<a href="https://bazel.build/">bazel</a>でビルドされているため、qoinもC++で実装し、bazelでビルドした
