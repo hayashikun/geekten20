@@ -5,6 +5,7 @@
     <Outline/>
     <Motivation/>
     <Product/>
+    <Next/>
     <Footer/>
   </div>
 </template>
@@ -16,11 +17,13 @@ import Motivation from "@/components/Motivation";
 import Product from "@/components/Product";
 import Outline from "@/components/Outline";
 import Footer from "@/components/Footer";
+import Next from "@/components/Next";
 
 
 export default {
   name: 'App',
   components: {
+    Next,
     Footer,
     Outline,
     Product,
