@@ -17,8 +17,8 @@
         </div>
         <div id="header-navbar" class="navbar-menu" v-bind:class="{ 'is-active': burgerActive }">
           <div class="navbar-start">
-            <a class="navbar-item" href="https://hayashikun.com/geekten20">
-              <h2>hayashikun.com/geekten20</h2>
+            <a class="navbar-item" href="http://geekten.hayashikun.com">
+              <h2>geekten.hayashikun.com</h2>
             </a>
           </div>
           <div class="navbar-end">

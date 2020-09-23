@@ -7,6 +7,7 @@
       <div class="block">
         <ul>
           <li>qoinのbug fix (C++力を高めなきゃ😇)</li>
+          <li>qoverはスケールできないので、データの持ち方や設計をちゃんと考えないといけない</li>
           <li>qoinで検出できる対象 (現状はface_meshとhand_trackingのみ) をもっと増やしたい</li>
           <li>検出データをニューラルネットで処理するやつ面白そうだしもっとやりたい</li>
         </ul>
