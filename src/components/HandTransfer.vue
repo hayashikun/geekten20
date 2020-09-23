@@ -2,8 +2,7 @@
   <div>
     <div class="url-wrapper">
       <label>
-        Address
-        <input v-model="url">
+        <input v-model="url" style="width: 200px">
       </label>
       <button @click="connect">Connect</button>
     </div>
@@ -26,7 +25,7 @@ export default {
     const material = new THREE.LineBasicMaterial();
     const lines = new THREE.Group();
     return {
-      url: 'http://localhost:3000',
+      url: 'http://gdh.hayashikun.com:3000',
       connection: [
         0, 1, 1, 2, 2, 3, 3, 4,
         0, 5, 5, 6, 6, 7, 7, 8,
