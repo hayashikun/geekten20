@@ -27,8 +27,8 @@
             <li v-bind:class="{ 'is-active': activeTab === 'pyoin_app' }">
               <a v-on:click="activeTab = 'pyoin_app'">pyoin (head_direction, janken, hand_number)</a>
             </li>
-            <li v-bind:class="{ 'is-active': activeTab === 'pyoin_server' }">
-              <a v-on:click="activeTab = 'pyoin_server'">pyoin (pp_server)</a>
+            <li v-bind:class="{ 'is-active': activeTab === 'qover' }">
+              <a v-on:click="activeTab = 'qover'">qover</a>
             </li>
           </ul>
         </div>
@@ -39,8 +39,8 @@
           <div class="content" v-bind:class="{ 'is-active': activeTab === 'pyoin_app' }">
             pyoin_app content
           </div>
-          <div class="content" v-bind:class="{ 'is-active': activeTab === 'pyoin_server' }">
-            pyoin_server content
+          <div class="content" v-bind:class="{ 'is-active': activeTab === 'qover' }">
+            <HandTransfer/>
           </div>
         </div>
       </div>
@@ -49,8 +49,11 @@
 </template>
 
 <script>
+import HandTransfer from "@/components/HandTransfer";
+
 export default {
   name: "Product",
+  components: {HandTransfer},
   data() {
     return {
       activeTab: 'poin'

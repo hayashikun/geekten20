@@ -4,7 +4,6 @@
     <Introduction/>
     <Motivation/>
     <Product/>
-    <Demo />
   </div>
 </template>
 
@@ -13,13 +12,11 @@ import Header from "@/components/Header";
 import Introduction from "@/components/Introduction";
 import Motivation from "@/components/Motivation";
 import Product from "@/components/Product";
-import Demo from "@/components/Demo";
 
 
 export default {
   name: 'App',
   components: {
-    Demo,
     Product,
     Motivation,
     Introduction,

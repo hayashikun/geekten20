@@ -16,6 +16,7 @@
     "core-js": "^3.6.5",
     "google-protobuf": "^3.13.0",
     "grpc-web": "^1.2.1",
+    "three": "^0.120.1",
     "vue": "^2.6.11",
     "vue-js-modal": "^2.0.0-rc.6"
   },
