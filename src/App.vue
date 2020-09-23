@@ -2,8 +2,10 @@
   <div id="app">
     <Header/>
     <Introduction/>
+    <Outline/>
     <Motivation/>
     <Product/>
+    <Footer/>
   </div>
 </template>
 
@@ -12,11 +14,15 @@ import Header from "@/components/Header";
 import Introduction from "@/components/Introduction";
 import Motivation from "@/components/Motivation";
 import Product from "@/components/Product";
+import Outline from "@/components/Outline";
+import Footer from "@/components/Footer";
 
 
 export default {
   name: 'App',
   components: {
+    Footer,
+    Outline,
     Product,
     Motivation,
     Introduction,
