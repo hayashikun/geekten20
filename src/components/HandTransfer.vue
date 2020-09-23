@@ -1,18 +1,13 @@
 <template>
   <div>
-    <div class="columns">
-      <div class="column is-half"></div>
-      <div class="column is-half">
-        <div class="url-wrapper">
-          <label>
-            Address
-            <input v-model="url">
-          </label>
-          <button @click="connect">Connect</button>
-        </div>
-        <canvas id="canvas" width="600" height="400"></canvas>
-      </div>
+    <div class="url-wrapper">
+      <label>
+        Address
+        <input v-model="url">
+      </label>
+      <button @click="connect">Connect</button>
     </div>
+    <canvas id="canvas" width="400" height="300"></canvas>
   </div>
 </template>
 
@@ -26,7 +21,7 @@ export default {
   data() {
     const scene = new THREE.Scene();
     const renderer = null;
-    const camera = new THREE.PerspectiveCamera(50, 3 / 2);
+    const camera = new THREE.PerspectiveCamera(50, 4 / 3);
     const light = new THREE.DirectionalLight(0xffffff);
     const material = new THREE.LineBasicMaterial();
     const lines = new THREE.Group();
