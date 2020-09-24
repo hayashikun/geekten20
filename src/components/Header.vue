@@ -23,10 +23,10 @@
           </div>
           <div class="navbar-end">
             <a class="navbar-item" href="https://twitter.com/haya4p">
-              <h2>Twitter - @haya4p</h2>
+              <h2><fai :icon="['fab', 'twitter']"/> haya4p</h2>
             </a>
             <a class="navbar-item" href="https://github.com/hayashikun">
-              <h2>Github - @hayashikun</h2>
+              <h2><fai :icon="['fab', 'github']"/> hayashikun</h2>
             </a>
           </div>
         </div>

@@ -6,14 +6,21 @@
       </h2>
       <div class="block">
         このプレゼンテーションで紹介するものは、
+        <ul>
+          <li>Webカメラの映像から顔や手のトラッキングをするアプリケーション<code>qoin</code></li>
+          <li><code>qoin</code>を利用したアプリケーション（<code>Poin</code>, <code>pyoin</code>, <code>qover</code>）</li>
+        </ul>
+        です
+        <br/><br/>
+        これらのアプリはまだ何の価値も生み出していませんし、見通しも立っていません（<b>無駄開発！</b>）
         <br/>
-        qoinとqoinを使ったいくつかのアプリケーション(Poin, pyoin, qover)です
+        この発表では<code>qoin</code>と<code>qoin</code>を利用したアプリケーションの<b>Concept</b>と<b>Example</b>を紹介するので、
         <br/>
-        まだ無駄開発の域なので、これらはまだ何の役には立ちませんが
+        この発表を聞いて皆様に<b>ワクワク</b>していただき、これから皆様と一緒に価値を創造していきたいと思っています
         <br/>
-        これらのプログラムを<b>Example</b>として、
+        （＝こんなことできんじゃないの？みたいなのあればコメント下さい！）
         <br/>
-        これから皆様に何か役に立つものを作っていただければと思います
+        （＝皆様も使ってみてください！）
       </div>
     </div>
   </div>
@@ -27,7 +34,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "/node_modules/bulma/bulma.sass";
-@import "../assets/panel";
 
 #outline {
   margin: 64px auto;

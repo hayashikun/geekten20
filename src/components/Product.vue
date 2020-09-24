@@ -10,12 +10,13 @@
             <img src="@/assets/product.png" alt="product" style="width: 90%; margin-top: 12px"/>
           </div>
           <div class="column is-three-quarters">
-            <h3>qoin</h3>
+            <h3><a href="https://github.com/hayashikun/qoin">qoin</a></h3>
             Webカメラの映像から手や顔を検出し、検出データをgRPCで他へ送信するアプリケーション<br/>
-            検出にはgoogle/mediapipeを利用し、データを抽出する処理などを追加した<br/>
+            検出には<code>google/mediapipe</code>を利用し、データを抽出する処理などを追加した<br/>
             データ送信は、gRPC Serverを起動し、リクエストに対して検出データをレスポンスとして送る方法 (PullStream) と、
             別のgRPC Serverへリクエストとして検出データを送る方法 (PushStream) の2つに対応している<br/>
-            mediapipeはC++で実装され、<a href="https://bazel.build/">bazel</a>でビルドされているため、qoinもC++で実装し、bazelでビルドした
+            <code>mediapipe</code>はC++で実装され、<a href="https://bazel.build/">bazel</a>でビルドされているため、
+            <code>qoin</code>もC++で実装し、bazelでビルドした
           </div>
         </div>
         <img src="@/assets/system.png" alt="system" style="width: 90%"/>
@@ -37,7 +38,11 @@
             <h3><a href="https://github.com/hayashikun/poin">Poin (Rust)</a></h3>
             <div class="columns">
               <div class="column is-three-fifths">
-                qoinから受け取った手の位置に応じて画面上のポインターを移動させるアプリケーション
+                <code>qoin</code>から受け取った手の位置に応じて画面上のポインターを移動させるアプリケーション
+                <br/>
+                GUIライブラリには<a href="https://github.com/PistonDevelopers/conrod">conrod</a>を使った
+                <br/><br/>
+                プレゼンで使おうと思ってましたが、超使いにくいので使いません
               </div>
               <div class="column">
                 <img src="@/assets/poin.gif" alt="system" style="width: 100%"/>
@@ -48,7 +53,7 @@
             <h3><a href="https://github.com/hayashikun/pyoin">pyoin (Python)</a></h3>
             <div class="columns">
               <div class="column is-three-fifths">
-                qoinから受け取った手、顔の検出データから、
+                <code>qoin</code>から受け取った手、顔の検出データから、
                 <ul>
                   <li>顔の向き (head_direction)</li>
                   <li>じゃんけんの手 (janken)</li>
@@ -74,17 +79,18 @@
                 <img src="@/assets/qover.png" alt="qover" style="width: 80%"/>
               </div>
               <div class="column is-half">
-                qoinからPushStreamで受け取ったデータをPushStreamで複数のクライアントに送信するgRPCサーバー
+                <code>qoin</code>からPushStreamで受け取ったデータをPushStreamで複数のクライアントに送信するgRPCサーバー
                 <br/>
-                qoverを用いることで、ネットワークを超えて検出データをやり取りできる
+                クライアントへはPullStreamによってデータが送られるため、接続hostを変えるだけでネットワーク越しに<code>qoin</code>の情報を取得できる
                 <br/>
-                クライアントへはPullStreamによってデータが送られるため、接続hostを変えるだけでネットワーク越しのqoinの情報を取得できる
+                （<code>Poin</code>や<code>pyoin</code>を別のネットワーク、別の端末でも接続先を変えるだけで使えるということ）
                 <br/><br/>
-                ProxyにはEnvoyを用い、<code>gh.hayashikun.com</code>にデプロイした
+                <code>gh.hayashikun.com:3000</code>にデプロイしたので、本番ではリアルタイムデモをお見せします
                 <br/>
-                <code>gdh.hayashikun.com</code>はデモとして手の動きサンプルを配信している
+                <code>gdh.hayashikun.com:3000</code>はデモとして手の動きサンプルを配信しているので、いつでも動きます
                 <br/>
-                connectを押すと手の動きが確認できるので是非（同時接続数は限られているので動かなかったらすんません）
+                <code>connect</code>を押すと手の動きが確認できるので是非
+                （課金が怖くてよわよわフリートでデプロイしていて、同時接続数は多分そんなに多くないです動かなかったらごめんなさい）
                 <br /><br />
                 JSで手の動きを表示させる実装は
                 <a href="https://github.com/hayashikun/geekten20/blob/master/src/components/HandTransfer.vue">
@@ -119,7 +125,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "/node_modules/bulma/bulma.sass";
-@import "../assets/panel";
 
 #product {
   margin: 64px auto;

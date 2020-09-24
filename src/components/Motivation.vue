@@ -2,7 +2,7 @@
   <div id="motivation" class="container">
     <div class="content is-medium">
       <h2 class="title is-3">
-        モチベ
+        作ったきっかけみたいなやつ
       </h2>
       <div class="block motivation-list">
         <div class="box">
@@ -10,28 +10,28 @@
           <div>楓さんから技育展の案内</div>
         </div>
         <div class="arrow">
-          <font-awesome-icon :icon="['fas', 'arrow-right']"/>
+          <fai :icon="['fas', 'arrow-right']"/>
         </div>
         <div class="box">
           <img src="@/assets/thinking.png" alt="thinking" style="height: 200px"/>
           <div>久々になんか作って出るか！<br/>でも何を作ろう</div>
         </div>
         <div class="arrow">
-          <font-awesome-icon :icon="['fas', 'arrow-right']"/>
+          <fai :icon="['fas', 'arrow-right']"/>
         </div>
         <div class="box">
           <img src="@/assets/to_poin.png" alt="to_poin" style="height: 200px"/>
           <div>プレゼンといえばポインターやな<br/>レーザーポインター的なやつ作るか</div>
         </div>
         <div class="arrow">
-          <font-awesome-icon :icon="['fas', 'arrow-right']"/>
+          <fai :icon="['fas', 'arrow-right']"/>
         </div>
         <div class="box">
           <img src="@/assets/hand.png" alt="hand" style="height: 200px"/>
           <div>ポインターをどうやって動かす？<br/>手の動きに連動させれば映えるかな？<br/>オンラインだし表情も伝わるといいな</div>
         </div>
         <div class="arrow">
-          <font-awesome-icon :icon="['fas', 'arrow-right']"/>
+          <fai :icon="['fas', 'arrow-right']"/>
         </div>
         <div class="box">
           <img src="@/assets/pipe.png" alt="pipe" style="height: 200px"/>
@@ -39,7 +39,7 @@
             <br/>でもライブラリとして使えるわけじゃない<br/>あとC++あんま書きたくない</div>
         </div>
         <div class="arrow">
-          <font-awesome-icon :icon="['fas', 'arrow-right']"/>
+          <fai :icon="['fas', 'arrow-right']"/>
         </div>
         <div class="box">
           <img src="@/assets/senju_kannon.png" alt="senju_kannon" style="height: 200px"/>
@@ -80,7 +80,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "/node_modules/bulma/bulma.sass";
-@import "../assets/panel";
 
 #motivation {
   margin: 64px auto;

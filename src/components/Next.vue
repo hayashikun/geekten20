@@ -2,19 +2,28 @@
   <div id="next" class="container">
     <div class="content is-medium">
       <h2 class="title is-3">
-        今後の展望
+        今後の展望など
       </h2>
       <div class="block">
         <ul>
-          <li>qoinのbug fix (C++力を高めなきゃ😇)</li>
-          <li>qoverはスケールできないので、データの持ち方や設計をちゃんと考えないといけない</li>
-          <li>qoinで検出できる対象 (現状はface_meshとhand_trackingのみ) をもっと増やしたい</li>
+          <li><code>qoin</code>のbug fix (C++力を高めなきゃ😇)</li>
+          <li><code>qover</code>は現状スケールできない設計なので、データの持ち方や設計をちゃんと考えないといけない</li>
+          <li><code>qoin</code>で検出できる対象が現状はface_meshとhand_trackingのみなので、もっと増やしたい（<code>mediapipe</code>にあるものならすぐできる）</li>
+          <li><code>google/mediapipe</code>自体が面白いプロジェクトなので、contributeしたい</li>
           <li>検出データをニューラルネットで処理するやつ面白そうだしもっとやりたい</li>
         </ul>
+        <code>google/mediapipe</code>の開発は活発に続いていて、今後もっと検出できる対象が増えるはず
+      </div>
 
-        mediapipeの開発は活発に続いており、今後もっと検出できる対象が増えるはず
-        <br/>
-        <Tweet id="1308683735580114949"></Tweet>
+      <div class="columns">
+        <div class="column">
+          もっとかわいくなりたい
+          <Tweet id="1299740138902228997"></Tweet>
+        </div>
+        <div class="column">
+          最終的にはTony Starkになりたい
+          <Tweet id="1308683735580114949"></Tweet>
+        </div>
       </div>
     </div>
   </div>
@@ -32,7 +41,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "/node_modules/bulma/bulma.sass";
-@import "../assets/panel";
 
 #next {
   margin: 64px auto;
