@@ -2,9 +2,9 @@
   <div>
     <div class="url-wrapper">
       <label>
-        <input v-model="url" style="width: 200px">
+        <input v-model="url" v-bind:disabled="this.stream" style="width: 200px">
       </label>
-      <button @click="connect">Connect</button>
+      <button @click="connect">{{ this.stream == null ? "Connect" : "Disconnect" }}</button>
     </div>
     <canvas id="canvas" width="400" height="300"></canvas>
   </div>
@@ -26,6 +26,7 @@ export default {
     const lines = new THREE.Group();
     return {
       url: 'http://gdh.hayashikun.com:3000',
+      stream: null,
       connection: [
         0, 1, 1, 2, 2, 3, 3, 4,
         0, 5, 5, 6, 6, 7, 7, 8,
@@ -51,11 +52,16 @@ export default {
   },
   methods: {
     connect() {
-      this.client = new HandTrackingClient(this.url, null, null);
+      if (this.stream != null) {
+        this.stream.cancel();
+        this.stream = null;
+        return;
+      }
+      let client = new HandTrackingClient(this.url, null, null);
       const request = new HandTrackingPullRequest();
-      let stream = this.client.handTrackingPullStream(request, {})
+      this.stream = client.handTrackingPullStream(request, {});
       let self = this;
-      stream.on('data', function (response) {
+      this.stream.on('data', function (response) {
         for (let i = 0; i < self.lines.children.length; i++) {
           self.lines.remove(self.lines.children[i]);
         }
