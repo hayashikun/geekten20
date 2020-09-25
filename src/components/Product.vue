@@ -35,9 +35,9 @@
         </div>
         <div class="tab-contents">
           <div class="content" v-bind:class="{ 'is-active': activeTab === 'poin' }">
-            <h3><a href="https://github.com/hayashikun/poin">Poin (Rust)</a></h3>
             <div class="columns">
               <div class="column is-three-fifths">
+                <h3><a href="https://github.com/hayashikun/poin">Poin (Rust)</a></h3>
                 <code>qoin</code>から受け取った手の位置に応じて画面上のポインターを移動させるアプリケーション
                 <br/>
                 GUIライブラリには<a href="https://github.com/PistonDevelopers/conrod">conrod</a>を使った
@@ -50,9 +50,9 @@
             </div>
           </div>
           <div class="content" v-bind:class="{ 'is-active': activeTab === 'pyoin_app' }">
-            <h3><a href="https://github.com/hayashikun/pyoin">pyoin (Python)</a></h3>
             <div class="columns">
               <div class="column is-three-fifths">
+                <h3><a href="https://github.com/hayashikun/pyoin">pyoin (Python)</a></h3>
                 <code>qoin</code>から受け取った手、顔の検出データから、
                 <ul>
                   <li>顔の向き (head_direction)</li>
@@ -68,7 +68,8 @@
                 <a href="https://github.com/hayashikun/pyoin/blob/master/data/janken.ipynb">data/janken.ipynb</a>
               </div>
               <div class="column">
-                <img src="@/assets/janken.gif" alt="system" style="width: 100%"/>
+                <img src="@/assets/head_direction.gif" alt="system" style="width: 80%"/>
+                <img src="@/assets/janken.gif" alt="system" style="width: 80%"/>
               </div>
             </div>
           </div>
