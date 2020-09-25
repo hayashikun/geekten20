@@ -17,7 +17,7 @@ export default {
 @import "/node_modules/bulma/bulma.sass";
 
 #app-footer {
-  height: 48px;
+  height: 72px;
   text-align: center;
 }
 

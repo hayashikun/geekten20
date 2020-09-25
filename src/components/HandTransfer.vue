@@ -2,9 +2,9 @@
   <div>
     <div class="url-wrapper">
       <label>
-        <input v-model="url" v-bind:disabled="this.stream" style="width: 200px">
+        <input v-model="url" v-bind:disabled="this.stream" style="width: 300px; font-size: large;">
       </label>
-      <button @click="connect">{{ this.stream == null ? "Connect" : "Disconnect" }}</button>
+      <button @click="connect" style="margin: 4px 12px; font-size: large">{{ this.stream == null ? "Connect" : "Disconnect" }}</button>
     </div>
     <canvas id="canvas" width="400" height="300"></canvas>
   </div>
